@@ -15,7 +15,7 @@ import java.util.Collections;
  * @category #Graph
  */
 
-public class _BOJ_Graph_S1_2667 {
+public class BOJ_Graph_S1_2667 {
 
 	private static int N, cnt;
 	private static int[][] map;
