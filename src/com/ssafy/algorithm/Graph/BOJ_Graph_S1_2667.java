@@ -20,20 +20,9 @@ public class BOJ_Graph_S1_2667 {
 	private static int N, cnt;
 	private static int[][] map;
 	private static boolean[][] visited;
-	private static ArrayList<Point> house;
 	private static ArrayList<Integer> complex;
 	private static int[] dr = { -1, 1, 0, 0 }; // 상, 하, 좌, 우
 	private static int[] dc = { 0, 0, -1, 1 };
-
-	private static class Point {
-		int r;
-		int c;
-
-		Point(int r, int c) {
-			this.r = r;
-			this.c = c;
-		}
-	}
 
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -43,17 +32,12 @@ public class BOJ_Graph_S1_2667 {
 
 		map = new int[N][N];
 		visited = new boolean[N][N];
-		house = new ArrayList<>();
 		complex = new ArrayList<>();
 
 		for (int r = 0; r < N; r++) {
 			String[] str = br.readLine().split("");
-
 			for (int c = 0; c < N; c++) {
 				map[r][c] = Integer.parseInt(str[c]);
-				if (map[r][c] == 1) {
-					house.add(new Point(r, c));
-				}
 			}
 		}
 
