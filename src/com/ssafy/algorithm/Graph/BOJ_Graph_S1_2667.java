@@ -23,7 +23,7 @@ public class BOJ_Graph_S1_2667 {
 	private static ArrayList<Point> house;
 	private static ArrayList<Integer> complex;
 	private static int[] dr = { -1, 1, 0, 0 }; // 상, 하, 좌, 우
-	private static int[] dc = { 0, 0, -1,
+	private static int[] dc = { 0, 0, -1, 1 };
 
 	private static class Point {
 		int r;
