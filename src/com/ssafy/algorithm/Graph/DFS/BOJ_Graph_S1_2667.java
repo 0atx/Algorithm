@@ -1,4 +1,4 @@
-package com.ssafy.algorithm.Graph;
+package com.ssafy.algorithm.Graph.DFS;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
