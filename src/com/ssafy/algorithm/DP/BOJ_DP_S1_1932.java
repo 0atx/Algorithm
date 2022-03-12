@@ -10,8 +10,7 @@ import java.util.StringTokenizer;
 /*
  * @author 0at_x
  * @since 2022. 03. 08.
- * @see https://www.acmicpc.net/problem/1748
- * @category #DP
+ * @see https://www.acmicpc.net/problem/1932
  */
 
 public class BOJ_DP_S1_1932 {
