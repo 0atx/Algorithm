@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.ArrayList;
 import java.util.Collections;
- 
+
 /*
  * @author 0at_x
  * @since 2022. 03. 10. 
