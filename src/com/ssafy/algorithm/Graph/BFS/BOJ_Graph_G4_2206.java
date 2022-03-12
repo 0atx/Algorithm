@@ -12,7 +12,7 @@ import java.util.StringTokenizer;
 /*
  * @author 0at_x
  * @since 2022. 03. 12.
- * @see https://www.acmicpc.net/problem/2667
+ * @see https://www.acmicpc.net/problem/2206
  * @category #Graph
  */
 
