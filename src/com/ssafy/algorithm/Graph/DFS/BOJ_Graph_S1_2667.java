@@ -10,7 +10,7 @@ import java.util.Collections;
 
 /*
  * @author 0at_x
- * @since 2022. 03. 10.
+ * @since 2022. 03. 10. 
  * @see https://www.acmicpc.net/problem/2667
  * @category #Graph
  */
