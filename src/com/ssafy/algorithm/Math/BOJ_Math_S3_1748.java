@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 
-/*
+/ *
  * @author 0at_x
  * @since 2022. 03. 07.
  * @see https://www.acmicpc.net/problem/1748
