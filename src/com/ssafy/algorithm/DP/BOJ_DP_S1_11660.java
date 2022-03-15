@@ -11,7 +11,7 @@ import java.util.StringTokenizer;
  * @author 0at_x
  * @since 2022. 03. 15.
  * @see https://www.acmicpc.net/problem/11660
- * @category #D
+ * @category #DP
  */
 
 public class BOJ_DP_S1_11660 {
