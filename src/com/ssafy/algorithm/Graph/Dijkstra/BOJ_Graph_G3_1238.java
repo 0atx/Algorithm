@@ -40,7 +40,6 @@ public class BOJ_Graph_G3_1238 {
 
 	}
 
-	// 이 문제는...모든 정점에서 X까지의 거리 구하는 거 not 모든 정점에서 모든정점
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
@@ -51,12 +50,9 @@ public class BOJ_Graph_G3_1238 {
 		M = Integer.parseInt(st.nextToken());
 		X = Integer.parseInt(st.nextToken());
 
-		// X번 마을에서 집 가는거
 		fromXList = new ArrayList<>();
-		// 집에서 X번 마을 가는거
 		toXList = new ArrayList<>();
 
-		// 초기화
 		for (int n = 0; n <= N; n++) {
 			fromXList.add(new ArrayList<>());
 			toXList.add(new ArrayList<>());
@@ -68,20 +64,17 @@ public class BOJ_Graph_G3_1238 {
 			int to = Integer.parseInt(st.nextToken());
 			int d = Integer.parseInt(st.nextToken());
 
-			// 주어진 건 X에서 집으로 가는거만이라 그거를 fromXList에 넣고 그 반대(집 > X)를 toXList에 넣었음
-			// 출발지(from)에서 갈 수 있는 마을들(to)이랑 소요시간(d)을 리스트에 넣는거임
 			fromXList.get(from).add(new Node(to, d));
-			// 이건 반대겠죠?
 			toXList.get(to).add(new Node(from, d));
 		}
 
-		fromXdist = dijkstra(fromXList); // X에서 시작점들 사이 최단거리
-		toXdist = dijkstra(toXList); // 시작점에서 X 최단 거리
+		fromXdist = dijkstra(fromXList);
+		toXdist = dijkstra(toXList);
 
 		int result = Integer.MIN_VALUE;
 
 		for (int n = 1; n <= N; n++) {
-			result = Math.max(fromXdist[n] + toXdist[n], result); // 합 중에 제일 큰거 고르기
+			result = Math.max(fromXdist[n] + toXdist[n], result);
 		}
 
 		bw.write(result + "\n");
