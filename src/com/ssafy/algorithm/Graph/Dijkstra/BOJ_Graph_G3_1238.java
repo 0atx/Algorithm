@@ -62,10 +62,10 @@ public class BOJ_Graph_G3_1238 {
 			st = new StringTokenizer(br.readLine());
 			int from = Integer.parseInt(st.nextToken());
 			int to = Integer.parseInt(st.nextToken());
-			int c = Integer.parseInt(st.nextToken());
+			int d = Integer.parseInt(st.nextToken());
 
-			fromXList.get(from).add(new Node(to, c));
-			toXList.get(to).add(new Node(from, c));
+			fromXList.get(from).add(new Node(to, d));
+			toXList.get(to).add(new Node(from, d));
 		}
 
 		fromXdist = dijkstra(fromXList);
