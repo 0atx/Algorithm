@@ -11,7 +11,7 @@ import java.util.StringTokenizer;
  * @author 0at_x
  * @since 2022. 03. 17.
  * @see https://www.acmicpc.net/problem/19637
- * @category #BinarySearch
+ * @category #BinarySearch 
  */
 
 public class BOJ_BS_S3_19637 {
