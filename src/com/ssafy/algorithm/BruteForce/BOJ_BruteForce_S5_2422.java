@@ -15,7 +15,6 @@ import java.util.StringTokenizer;
  */
 
 public class BOJ_BruteForce_S5_2422 {
-
 	private static int N, M, result;
 	private static boolean[][] arr;
 	private static StringTokenizer st;
