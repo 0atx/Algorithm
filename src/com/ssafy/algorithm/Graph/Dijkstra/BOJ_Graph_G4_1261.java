@@ -11,7 +11,7 @@ import java.util.StringTokenizer;
 /*
  * @author 0at_x
  * @since 2022. 04. 07.
- * @see https://www.acmicpc.net/problem/1261
+ * @see https://www.acmicpc.net/problem/1261 
  * @category #Graph
  */
 
