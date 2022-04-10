@@ -12,7 +12,7 @@ import java.util.StringTokenizer;
  * @since 2022. 04. 06.
  * @see https://www.acmicpc.net/problem/12847
  * @category #SlidingWindow
- */
+ */ 
 
 public class BOJ_SW_S3_12847 {
 
