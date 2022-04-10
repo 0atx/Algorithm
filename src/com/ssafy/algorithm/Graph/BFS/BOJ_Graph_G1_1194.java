@@ -61,19 +61,16 @@ public class BOJ_Graph_G1_1194 {
 		while (!q.isEmpty()) {
 			int size = q.size();
 			while (size-- > 0) {
-				// 1. 맨 처음 노드 데려오기
 				MinSik head = q.poll();
 
-				// 2. 사용한다. - 정답을 찾거나 부가적인 행동
 				if (map[head.r][head.c] == '1') {
 					return depth;
 				}
-				// 키의 위에 있다면 --> update
+
 				if (map[head.r][head.c] >= 'a' && map[head.r][head.c] <= 'f') {
 					head.updateKey(map[head.r][head.c]);
 				}
 
-				// 3. 자식 노드 탐색
 				for (int d = 0; d < deltas.length; d++) {
 					int nr = head.r + deltas[d][0];
 					int nc = head.c + deltas[d][1];
