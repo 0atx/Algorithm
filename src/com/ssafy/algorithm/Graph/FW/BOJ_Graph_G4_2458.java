@@ -11,7 +11,7 @@ import java.util.StringTokenizer;
  * @author 0at_x
  * @since 2022. 04. 08.
  * @see https://www.acmicpc.net/problem/2458
- * @category #Graph
+ * @category #Graph 
  */
 
 public class BOJ_Graph_G4_2458 {
