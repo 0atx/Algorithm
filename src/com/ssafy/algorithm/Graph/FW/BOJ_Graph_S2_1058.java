@@ -10,7 +10,7 @@ import java.io.OutputStreamWriter;
  * @author 0at_x
  * @since 2022. 04. 08.
  * @see https://www.acmicpc.net/problem/1058
- * @category #Graph
+ * @category #Graph 
  */
 
 public class BOJ_Graph_S2_1058 {
