@@ -48,9 +48,7 @@ public class BOJ_Graph_G4_2239 {
 	}
 
 	private static boolean makePerDup(int idx) {
-		// 1. 기저 조건
 		if (idx == blanks.size()) {
-			// 정답 출력
 			for (int r = 0; r < 9; r++) {
 				for (int c = 0; c < 9; c++) {
 					sb.append(map[r][c]);
@@ -60,17 +58,13 @@ public class BOJ_Graph_G4_2239 {
 			return true;
 		}
 
-		// 2. 재귀 케이스
 		Point p = blanks.get(idx);
 		for (int i = 1; i < 10; i++) {
-			// p에 i를 할당할 수 있나?
 			if (canUse(p, i)) {
-				// 가능하면 놓고 다음 재귀..
 				map[p.r][p.c] = i;
 				if (makePerDup(idx + 1)) {
 					return true;
 				}
-				// 다음에는 안 한 척
 				map[p.r][p.c] = 0;
 			}
 
@@ -82,19 +76,19 @@ public class BOJ_Graph_G4_2239 {
 	private static boolean canUse(Point p, int v) {
 		int pr = p.r;
 		int pc = p.c;
-		// 같은 열에 혹시 v가 사용된 적이 있나?
+		
 		for (int r = 0; r < 9; r++) {
 			if (map[r][pc] == v) {
 				return false;
 			}
 		}
-		// 같은 행에 혹시 v가 사용된 적이 있나?
+
 		for (int c = 0; c < 9; c++) {
 			if (map[pr][c] == v) {
 				return false;
 			}
 		}
-		// 작은 사각형에 v가 사용된 적이 있는지?
+
 		int sr = pr / 3 * 3;
 		int sc = pc / 3 * 3;
 		for (int r = sr; r < sr + 3; r++) {
