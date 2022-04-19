@@ -35,7 +35,6 @@ public class BOJ_DP_S2_11053 {
 
 		for (int n = 0; n < N; n++) {
 			dp[n] = 1;
-
 			for (int m = 0; m < n; m++) {
 				if (sequence[m] < sequence[n] && dp[n] < dp[m] + 1) {
 					dp[n] = dp[m] + 1;
