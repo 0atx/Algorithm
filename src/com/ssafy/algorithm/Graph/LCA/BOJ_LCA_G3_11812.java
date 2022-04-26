@@ -53,14 +53,12 @@ public class BOJ_LCA_G3_11812 {
 	private static int LCA(long x, long y) {
 		int cnt = 0;
 		while (x != y) {
-			while (x > y) {
-				x = (x + K - 2) / K;
-				cnt++;
+			if (x > y) {
+				x = (x - 2) / K + 1;
+			} else {
+				y = (y - 2) / K + 1;
 			}
-			while (x < y) {
-				y = (y + K - 2) / K;
-				cnt++;
-			}
+			cnt++;
 		}
 		return cnt;
 	}
