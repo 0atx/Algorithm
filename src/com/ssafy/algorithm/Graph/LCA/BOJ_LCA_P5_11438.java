@@ -17,7 +17,6 @@ import java.util.StringTokenizer;
  */
 
 public class BOJ_LCA_P5_11438 {
-
 	private static int N, M, result, logN = 21;
 	private static int[] depth;
 	private static int[][] parent;
