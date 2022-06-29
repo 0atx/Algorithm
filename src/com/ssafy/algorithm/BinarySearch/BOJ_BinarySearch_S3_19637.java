@@ -1,4 +1,4 @@
-package com.ssafy.algorithm.BS;
+package com.ssafy.algorithm.BinarySearch;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -14,7 +14,7 @@ import java.util.StringTokenizer;
  * @category #BinarySearch
  */
 
-public class BOJ_BS_S3_19637 {
+public class BOJ_BinarySearch_S3_19637 {
 
 	private static int N, M;
 	private static String[] titles;
