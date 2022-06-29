@@ -1,4 +1,4 @@
-package com.ssafy.algorithm.DC;
+package com.ssafy.algorithm.DivideConquer;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -15,7 +15,7 @@ import java.util.StringTokenizer;
  * @category #Divide&Conquer
  */
 
-public class BOJ_DC_S4_11582 {
+public class BOJ_DivideConquer_S4_11582 {
 
 	private static int N, K;
 	private static int[] tastes;
