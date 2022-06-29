@@ -10,7 +10,7 @@ import java.util.StringTokenizer;
 
 /*
  * @author 0at_x
- * @since 2022. 04. 22.
+ * @since 2022. 06. 23.
  * @see https://www.acmicpc.net/problem/2098
  * @category #DP
  */
@@ -32,7 +32,7 @@ public class BOJ_DP_G1_2098 {
 
 		for (int r = 0; r < N; r++) {
 			st = new StringTokenizer(br.readLine());
-			Arrays.fill(dp[r], INF);
+			Arrays.fill(dp[r], -1);
 			for (int c = 0; c < N; c++) {
 				map[r][c] = Integer.parseInt(st.nextToken());
 			}
@@ -55,9 +55,11 @@ public class BOJ_DP_G1_2098 {
 			return map[node][0];
 		}
 
-		if (dp[node][visited] != INF) {
+		if (dp[node][visited] != -1) {
 			return dp[node][visited];
 		}
+
+		dp[node][visited] = INF;
 
 		for (int i = 0; i < N; i++) {
 			if ((visited & (1 << i)) == 0 && map[node][i] != 0) {
