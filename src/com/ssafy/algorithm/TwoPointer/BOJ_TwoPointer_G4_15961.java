@@ -1,4 +1,4 @@
-package com.ssafy.algorithm.SW;
+package com.ssafy.algorithm.TwoPointer;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -11,10 +11,10 @@ import java.util.StringTokenizer;
  * @author 0at_x
  * @since 2022. 04. 05.
  * @see https://www.acmicpc.net/problem/15961
- * @category #SlidingWindow
+ * @category #TwoPointer
  */
 
-public class BOJ_SW_G4_15961 {
+public class BOJ_TwoPointer_G4_15961 {
 
 	private static int N, d, k, c, result;
 	private static int[] sushi, visited;
