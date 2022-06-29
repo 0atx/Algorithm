@@ -1,4 +1,4 @@
-package com.ssafy.algorithm.SW;
+package com.ssafy.algorithm.TwoPointer;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -11,10 +11,10 @@ import java.util.StringTokenizer;
  * @author 0at_x
  * @since 2022. 04. 06.
  * @see https://www.acmicpc.net/problem/12847
- * @category #SlidingWindow
+ * @category #TwoPointer
  */ 
 
-public class BOJ_SW_S3_12847 {
+public class BOJ_TwoPointer_S3_12847 {
 
 	private static int N, M;
 	private static long sum, result;
